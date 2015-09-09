@@ -1,0 +1,9 @@
+%META:TOPICPARENT{name="WebHome"}%
+| *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
+| Entity | text | 50 | | | |
+| EntityName | text | 50 | | | |
+| LocalInternalControlMangager | text | 50 | | | |
+| LocalInternalControlMangagerDeputy | text | 50 | | | |
+| Sites | select | 50 | | | |
+| SiteManager | select | 50 | | | |
+| SiteManagerDeputy | select | 50 | | | |

@@ -1,0 +1,66 @@
+%META:TOPICINFO{author="schertlk" comment="save topic" date="1441712513" format="1.1" reprev="11" version="13"}%
+---+!! <nop>%WEB% Web Preferences
+
+%TOC%
+
+<sticky>
+<div class="%IF{"not context PreferencesPluginEnabled" then="foswikiHidden"}%">
+%EDITPREFERENCES{"%SYSTEMWEB%.DefaultPreferencesForm"}%
+</div>
+</sticky>
+
+---++ Modell Aachen Settings
+
+   
+   * Set WORKFLOW = 
+
+   * Set NO_MODAC_HEAD = 1
+
+   * Set WORKFLOWHISTORYFORMAT = </br> $state -- $date -- $wikiusername -- $expand(%WORKFLOWMETA{name="Remark"}%)
+
+   * Set ENTITYVARIABLES = , %MAKETEXT{"BR02 Von Roll do Brasil Ltda."}%=BR02, %MAKETEXT{"CH02 Von Roll Schweiz AG"}%=CH02, %MAKETEXT{"CH05 Von Roll Solar AG"}%=CH05, %MAKETEXT{"CH06 Von Roll Holding AG"}%=CH06, %MAKETEXT{"CH07 Von Roll Insulation & Composites Holding AG"}%=CH07, %MAKETEXT{"CH08 Von Roll Management AG"}%=CH08, %MAKETEXT{"CH09 Von Roll Water Holding AG"}%=CH09, %MAKETEXT{"CH10 Von Roll Finance AG"}%=CH10, %MAKETEXT{"CN02 Von Roll Shanghai Co. Ltd"}%=CN02, %MAKETEXT{"CN03 Von Roll Trading Shanghai Co. Ltd."}%=CN03, %MAKETEXT{"CN04 New Jadwson Electrical Material (SZ) Co."}%=CN04, %MAKETEXT{"CN05 Mica Electric Material (Lu He) Co. Ltd."}%=CN05, %MAKETEXT{"CN07 Tongcheng Xinyu Mica Products Co. Ltd."}%=CN07, %MAKETEXT{"CN08 Tongcheng Mica Electric Material Co. Ltd"}%=CN08, %MAKETEXT{"DE01 Von Roll Deutschland Holding GmbH"}%=DE01, %MAKETEXT{"DE03 Von Roll Deutschland GmbH"}%=DE03, %MAKETEXT{"DE06 Von Roll Reach GmBH"}%=DE06, %MAKETEXT{"DE07 BHU Umwelttechnik GmbH"}%=DE07, %MAKETEXT{"FR02 Von Roll France S.A."}%=FR02, %MAKETEXT{"FR04 Von Roll Isola France S.A."}%=FR04, %MAKETEXT{"GB01 Von Roll UK Ltd"}%=GB01, %MAKETEXT{"VR01 Group Von Roll Group (Consolidation)"}%=VR01, %MAKETEXT{"IN01 Von Roll India Pvt Ltd"}%=IN01, %MAKETEXT{"IN02 Pearl Insulations Pvt. Ltd"}%=IN02, %MAKETEXT{"IT01 Von Roll Italia SpA"}%=IT01, %MAKETEXT{"IT02 Albesiano Sisa Vernici S.r.l."}%=IT02, %MAKETEXT{"SG01 Von Roll Asia Pte Ltd"}%=SG01, %MAKETEXT{"US01 Von Roll USA - Schenectady"}%=US01, %MAKETEXT{"US02 Von Roll Austral Inc."}%=US02, %MAKETEXT{"US04 John C. Dolph Company"}%=US04, %MAKETEXT{"VR01 Group Von Roll Group (Consolidation)"}%=VR01
+
+---++ Appearance
+
+   * Set WEBBGCOLOR = #efefef
+      * <sticky>web-specific background color, <span style='background-color: %WEBBGCOLOR%'> current color </span></sticky>
+
+   * Set SITEMAPLIST = on
+      * set to =off= to hide this web from the [[%SYSTEMWEB%.SiteMap][SiteMap]]
+
+   * Set WEBSUMMARY = 
+      * description what this web is used for
+
+   * Set NOSEARCHALL = off
+      * if set to =on=, this web will be exclude web from a global search
+
+---++ Wiki application settings
+
+   * WebTopicEditTemplate
+      * default template for new topics in this web, if this topic does not exist,  [[%SYSTEMWEB%.WebTopicEditTemplate][site-level default template]] will be used
+
+   * Set WEBFORMS = RequestForm,EntityForm
+      * Comma separated list of forms that can be attached to topics in this web. See [[%SYSTEMWEB%.DataForms][DataForms]] for more information.
+
+---++ Access control
+
+Users or groups who are allowed to view, change and rename topics in the <nop>%WEB% web.
+Remember that an empty setting is a valid setting; setting DENYWEBVIEW to nothing means that anyone can view the web.
+
+   * Set DENYWEBVIEW = WikiGuest
+   * Set ALLOWWEBVIEW = %USERSWEB%.AdminGroup, HCOMPLGroup, EBGroup, GICMGroup, LICMGroup
+   * Set DENYWEBCHANGE = WikiGuest
+   * Set ALLOWWEBCHANGE = %USERSWEB%.AdminGroup, HCOMPLGroup, EBGroup, GICMGroup, LICMGroup
+   * Set DENYWEBRENAME = WikiGuest
+   * Set ALLOWWEBRENAME = %USERSWEB%.AdminGroup, HCOMPLGroup, EBGroup, GICMGroup
+
+Users or groups allowed to change or rename this <nop>%TOPIC% topic: (e.g., [[%USERSWEB%.AdminGroup][AdminGroup]])
+
+   * Set ALLOWTOPICCHANGE = %USERSWEB%.KilianSchertlin
+   * Set ALLOWTOPICRENAME = %USERSWEB%.KilianSchertlin
+
+---
+%INCLUDE{"%SYSTEMWEB%.WebPreferencesHelp"}%
+
+
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%

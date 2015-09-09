@@ -1,0 +1,113 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1441809761" format="1.1" version="1"}%
+
+%META:FORM{name="RequestForm"}%
+%META:FIELD{name="Date" attributes="dummyforattr=%22H%22" title="Date" value="09 Sep 2015"}%
+%META:FIELD{name="DocumentType" attributes="" title="DocumentType" value="Internal Control Request"}%
+%META:FIELD{name="Process" attributes="" title="Process" value="Procurement"}%
+%META:FIELD{name="ICSControlNo" attributes="" title="ICSControlNo" value="2.9 Incoming Payment"}%
+%META:FIELD{name="ControlObjective" attributes="" title="ControlObjective" value=""}%
+%META:FIELD{name="ControlProcedure" attributes="" title="ControlProcedure" value=""}%
+%META:FIELD{name="ControlEvidence" attributes="" title="ControlEvidence" value=""}%
+%META:FIELD{name="ControlFrequency" attributes="" title="ControlFrequency" value=""}%
+%META:FIELD{name="IssueDate" attributes="" title="IssueDate" value=""}%
+%META:FIELD{name="ControlType" attributes="" title="ControlType" value=""}%
+%META:FIELD{name="ControlIndicator" attributes="" title="ControlIndicator" value=""}%
+%META:FIELD{name="TransactionSAP" attributes="" title="TransactionSAP" value=""}%
+%META:FIELD{name="RL01" attributes="" title="RL01" value="4"}%
+%META:FIELD{name="RL02" attributes="" title="RL02" value="9"}%
+%META:FIELD{name="RL03" attributes="" title="RL03" value="10"}%
+%META:FIELD{name="RL04" attributes="" title="RL04" value=""}%
+%META:FIELD{name="RL05" attributes="" title="RL05" value=""}%
+%META:FIELD{name="RL06" attributes="" title="RL06" value=""}%
+%META:FIELD{name="RL07" attributes="" title="RL07" value=""}%
+%META:FIELD{name="RL08" attributes="" title="RL08" value=""}%
+%META:FIELD{name="RL09" attributes="" title="RL09" value=""}%
+%META:FIELD{name="RL10" attributes="" title="RL10" value=""}%
+%META:FIELD{name="RL11" attributes="" title="RL11" value=""}%
+%META:FIELD{name="RL12" attributes="" title="RL12" value=""}%
+%META:FIELD{name="RL13" attributes="" title="RL13" value=""}%
+%META:FIELD{name="RL14" attributes="" title="RL14" value=""}%
+%META:FIELD{name="RL15" attributes="" title="RL15" value=""}%
+%META:FIELD{name="RL16" attributes="" title="RL16" value=""}%
+%META:FIELD{name="RL17" attributes="" title="RL17" value=""}%
+%META:FIELD{name="RL18" attributes="" title="RL18" value=""}%
+%META:FIELD{name="RL19" attributes="" title="RL19" value=""}%
+%META:FIELD{name="RL20" attributes="" title="RL20" value=""}%
+%META:FIELD{name="RL21" attributes="" title="RL21" value=""}%
+%META:FIELD{name="RL22" attributes="" title="RL22" value=""}%
+%META:FIELD{name="RL23" attributes="" title="RL23" value=""}%
+%META:FIELD{name="RL24" attributes="" title="RL24" value=""}%
+%META:FIELD{name="RL25" attributes="" title="RL25" value=""}%
+%META:FIELD{name="RL26" attributes="" title="RL26" value=""}%
+%META:FIELD{name="RL27" attributes="" title="RL27" value=""}%
+%META:FIELD{name="RL28" attributes="" title="RL28" value=""}%
+%META:FIELD{name="RL29" attributes="" title="RL29" value=""}%
+%META:FIELD{name="RL30" attributes="" title="RL30" value=""}%
+%META:FIELD{name="RL31" attributes="" title="RL31" value=""}%
+%META:FIELD{name="RL32" attributes="" title="RL32" value=""}%
+%META:FIELD{name="REL01" attributes="" title="REL01" value="relevant"}%
+%META:FIELD{name="REL02" attributes="" title="REL02" value="relevant"}%
+%META:FIELD{name="REL03" attributes="" title="REL03" value="relevant"}%
+%META:FIELD{name="REL04" attributes="" title="REL04" value="relevant"}%
+%META:FIELD{name="REL05" attributes="" title="REL05" value="relevant"}%
+%META:FIELD{name="REL06" attributes="" title="REL06" value=""}%
+%META:FIELD{name="REL07" attributes="" title="REL07" value=""}%
+%META:FIELD{name="REL08" attributes="" title="REL08" value=""}%
+%META:FIELD{name="REL09" attributes="" title="REL09" value=""}%
+%META:FIELD{name="REL10" attributes="" title="REL10" value=""}%
+%META:FIELD{name="REL11" attributes="" title="REL11" value=""}%
+%META:FIELD{name="REL12" attributes="" title="REL12" value=""}%
+%META:FIELD{name="REL13" attributes="" title="REL13" value=""}%
+%META:FIELD{name="REL14" attributes="" title="REL14" value=""}%
+%META:FIELD{name="REL15" attributes="" title="REL15" value=""}%
+%META:FIELD{name="REL16" attributes="" title="REL16" value=""}%
+%META:FIELD{name="REL17" attributes="" title="REL17" value=""}%
+%META:FIELD{name="REL18" attributes="" title="REL18" value=""}%
+%META:FIELD{name="REL19" attributes="" title="REL19" value=""}%
+%META:FIELD{name="REL20" attributes="" title="REL20" value=""}%
+%META:FIELD{name="REL21" attributes="" title="REL21" value=""}%
+%META:FIELD{name="REL22" attributes="" title="REL22" value=""}%
+%META:FIELD{name="REL23" attributes="" title="REL23" value=""}%
+%META:FIELD{name="REL24" attributes="" title="REL24" value=""}%
+%META:FIELD{name="REL25" attributes="" title="REL25" value=""}%
+%META:FIELD{name="REL26" attributes="" title="REL26" value=""}%
+%META:FIELD{name="REL27" attributes="" title="REL27" value=""}%
+%META:FIELD{name="REL28" attributes="" title="REL28" value=""}%
+%META:FIELD{name="REL29" attributes="" title="REL29" value=""}%
+%META:FIELD{name="REL30" attributes="" title="REL30" value=""}%
+%META:FIELD{name="REL31" attributes="" title="REL31" value=""}%
+%META:FIELD{name="REL32" attributes="" title="REL32" value=""}%
+%META:FIELD{name="LE01" attributes="" title="LE01" value=""}%
+%META:FIELD{name="LE02" attributes="" title="LE02" value="CH02 Von Roll Schweiz AG"}%
+%META:FIELD{name="LE03" attributes="" title="LE03" value="CH05 Von Roll Solar AG"}%
+%META:FIELD{name="LE04" attributes="" title="LE04" value="CH06 Von Roll Holding AG"}%
+%META:FIELD{name="LE05" attributes="" title="LE05" value="CH07 Von Roll Insulation & Composites Holding AG"}%
+%META:FIELD{name="LE06" attributes="" title="LE06" value="CH08 Von Roll Management AG"}%
+%META:FIELD{name="LE07" attributes="" title="LE07" value="CH09 Von Roll Water Holding AG"}%
+%META:FIELD{name="LE08" attributes="" title="LE08" value="CH10 Von Roll Finance AG"}%
+%META:FIELD{name="LE09" attributes="" title="LE09" value="CN02 Von Roll Shanghai Co. Ltd"}%
+%META:FIELD{name="LE10" attributes="" title="LE10" value="CN03 Von Roll Trading Shanghai Co. Ltd."}%
+%META:FIELD{name="LE11" attributes="" title="LE11" value="CN04 New Jadwson Electrical Material (SZ) Co."}%
+%META:FIELD{name="LE12" attributes="" title="LE12" value="CN05 Mica Electric Material (Lu He) Co. Ltd."}%
+%META:FIELD{name="LE13" attributes="" title="LE13" value="CN07 Tongcheng Xinyu Mica Products Co. Ltd."}%
+%META:FIELD{name="LE14" attributes="" title="LE14" value="CN08 Tongcheng Mica Electric Material Co. Ltd"}%
+%META:FIELD{name="LE15" attributes="" title="LE15" value="DE01 Von Roll Deutschland Holding GmbH"}%
+%META:FIELD{name="LE16" attributes="" title="LE16" value="DE03 Von Roll Deutschland GmbH"}%
+%META:FIELD{name="LE17" attributes="" title="LE17" value="DE06 Von Roll Reach GmBH"}%
+%META:FIELD{name="LE18" attributes="" title="LE18" value="DE07 BHU Umwelttechnik GmbH"}%
+%META:FIELD{name="LE19" attributes="" title="LE19" value="FR02 Von Roll France S.A."}%
+%META:FIELD{name="LE20" attributes="" title="LE20" value="FR04 Von Roll Isola France S.A."}%
+%META:FIELD{name="LE21" attributes="" title="LE21" value="GB01 Von Roll UK Ltd"}%
+%META:FIELD{name="LE22" attributes="" title="LE22" value="Group Von Roll Group (Consolidation)"}%
+%META:FIELD{name="LE23" attributes="" title="LE23" value="IN01 Von Roll India Pvt Ltd"}%
+%META:FIELD{name="LE24" attributes="" title="LE24" value="IN02 Pearl Insulations Pvt. Ltd"}%
+%META:FIELD{name="LE25" attributes="" title="LE25" value="IT01 Von Roll Italia SpA"}%
+%META:FIELD{name="LE26" attributes="" title="LE26" value="IT02 Albesiano Sisa Vernici S.r.l."}%
+%META:FIELD{name="LE27" attributes="" title="LE27" value="SG01 Von Roll Asia Pte Ltd"}%
+%META:FIELD{name="LE28" attributes="" title="LE28" value="US01 Von Roll USA - Schenectady"}%
+%META:FIELD{name="LE29" attributes="" title="LE29" value="US02 Von Roll Austral Inc."}%
+%META:FIELD{name="LE30" attributes="" title="LE30" value="US04 John C. Dolph Company"}%
+%META:FIELD{name="LE31" attributes="" title="LE31" value=""}%
+%META:FIELD{name="LE32" attributes="" title="LE32" value=""}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="RequestView"}%
+%META:PREFERENCE{name="EDIT_TEMPLATE" title="EDIT_TEMPLATE" type="Set" value="RequestEdit"}%

@@ -1,0 +1,37 @@
+%META:TOPICINFO{author="schertlk" comment="reprev" date="1436513976" format="1.1" reprev="5" version="6"}%
+---++ Defaults
+| *State type* | *Left tab* | *Right tab* | *Approved* |
+| approved | Request | Discussion | 1 |
+| draft | Request | Draft | 0 |
+| discussion | Request | Discussion | 0 |
+
+---++ States
+%EDITTABLE{}%
+| *State* | *Allow Edit* | *Allow Move* | *Allow Comment* | *Message* | *State Type* |
+| NEW | LOGGEDIN | | | This request is not under any CIP.  | draft |
+| ENTRY | LOGGEDIN | | | Please fill up the Request. | draft |
+| DISCUSSION | LOGGEDIN | nobody | LOGGEDIN | This document is currently being revised. | discussion |
+| APPROVALBYMANAGER | MeckelC,KeyUserGroup | | | This Request is waiting for approval by the Global Internal Control manager. | draft |
+| REJECTED | KeyUserGroup | | | This Request has been rejected. | approved |
+| APPROVED | KeyUserGroup | | | This Request has been approved. | approved |
+
+ 
+---++ Transitions
+%EDITTABLE{}%
+| *State* | *Action* | *Next State* | *Allowed* | *Notify* | *Condition* | *Warning* | *Attribute* |
+| NEW | Create | ENTRY | LOGGEDIN | | on | | NEW REMARK |
+| ENTRY | Request for approval | RESPONSE | LOGGEDIN | MeckelC | on | | FORK |
+| RESPONSE | Request for approval | APPROVALBYMANAGER | LOGGEDIN | MeckelC | on | | REMARK |
+| DISCUSSION | Request for approval | APPROVALBYMANAGER | LOGGEDIN | MeckelC | on | | REMARK |
+| APPROVALBYMANAGER | Approve this Request | APPROVED | MeckelC | %WORKFLOWMETA{"LASTPROCESSOR_ENTRY"}% | on | | REMARK |
+| APPROVALBYMANAGER | Request further Revision | ENTRY | MeckelC | %WORKFLOWMETA{"LASTPROCESSOR_ENTRY"}% | on | | REMARK |
+| APPROVED | Start new discussion. | DISCUSSION | LOGGEDIN | | on | | FORK |
+
+   * Set NOWYSIWYG = 1
+   * Set VIEW_TEMPLATE = WorkflowView
+   * Set ALLOWTOPICCHANGE = AdminGroup
+
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%

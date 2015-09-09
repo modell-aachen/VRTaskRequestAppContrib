@@ -1,0 +1,24 @@
+%META:TOPICINFO{author="BaseUserMapping_333" date="1441808265" format="1.1" version="1"}%
+%META:TOPICPARENT{name="Request123"}%
+
+%META:FORM{name="RequestForm"}%
+%META:FIELD{name="Date" attributes="dummyforattr=%22H%22" title="Date" value="09 Sep 2015"}%
+%META:FIELD{name="DocumentType" attributes="" title="DocumentType" value="Internal Control Response"}%
+%META:FIELD{name="Process" attributes="" title="Process" value="Procurement"}%
+%META:FIELD{name="ICSControlNo" attributes="" title="ICSControlNo" value="2.7 Invoice Issued"}%
+%META:FIELD{name="ControlObjective" attributes="" title="ControlObjective" value="Das ist das Ding"}%
+%META:FIELD{name="ControlProcedure" attributes="" title="ControlProcedure" value="Was ist das denn?"}%
+%META:FIELD{name="ControlEvidence" attributes="" title="ControlEvidence" value="Warum machen wir das so?"}%
+%META:FIELD{name="AssessmentComment" attributes="" title="AssessmentComment" value=""}%
+%META:FIELD{name="MeasureAssessment" attributes="" title="MeasureAssessment" value="Jo, das ist nicht schlecht!"}%
+%META:FIELD{name="CommentGlobal" attributes="" title="CommentGlobal" value=""}%
+%META:FIELD{name="MeasureGlobal" attributes="" title="MeasureGlobal" value=""}%
+%META:FIELD{name="CommentSM" attributes="" title="CommentSM" value="Sehr schön"}%
+%META:FIELD{name="MeasureSM" attributes="" title="MeasureSM" value=""}%
+%META:FIELD{name="LegalEntity" attributes="" title="LegalEntity" value="FR04"}%
+%META:FIELD{name="RiskLevel" attributes="" title="RiskLevel" value="9"}%
+%META:FIELD{name="Relevance" attributes="" title="Relevance" value="relevant"}%
+%META:WORKFLOW{name="ENTRY" LASTPROCESSOR_ENTRY="Main.MeckelC" LASTTIME_ENTRY="02.07.2015" LASTVERSION_ENTRY="1" LEAVING_NEW="Main.MeckelC" Remark="" Revision="0" TASK="" TASK_DUE=""}%
+%META:WORKFLOWHISTORY{value="<br />ENTRY -- 02.07.2015 -- %25WORKFLOWMETA%7bname=%22REMARK%22%7d%25"}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="ResponseView"}%
+%META:PREFERENCE{name="EDIT_TEMPLATE" title="EDIT_TEMPLATE" type="Set" value="ResponseEdit"}%

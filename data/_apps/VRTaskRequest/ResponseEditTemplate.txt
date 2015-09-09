@@ -1,0 +1,88 @@
+%META:TOPICINFO{author="schertlk" comment="reprev" date="1441629016" format="1.1" reprev="11" version="11"}%
+%TMPL:INCLUDE{edit}%
+
+%TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
+%TMPL:P{"formstart"}%%TMPL:P{"formtop"}%
+
+<div class="widgetBlockTitle">Internal Control Response</div>
+<div class="widgetBlockContent">
+
+<div style="display:none;">
+%RENDERFOREDIT{field="Date" format="$edit"}%
+%RENDERFOREDIT{field="Author" type="Set" value="%WIKINAME%"}%
+%RENDERFOREDIT{field="DocumentType" type="Set" value="Internal Control Response"}%
+</div>
+
+<table class="metaDataHead" table-layout:fixed>
+<tr> <td colspan="4">
+---+ Process Relevance
+</td> </tr>
+<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFOREDIT{field="Process" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFOREDIT{field="ICSControlNo" format="$edit"}%</td></tr>
+<tr> <td colspan="4">
+---+ Control Objective
+</td> </tr>
+<tr><td colspan="4">%RENDERFOREDIT{field="ControlObjective" format="$edit"}%</td></tr>
+<tr> <td colspan="4">
+---+ Control Procedure
+</td> </tr>
+<tr><td colspan="4">%RENDERFOREDIT{field="ControlProcedure" format="$edit"}%</td></tr>
+<tr> <td colspan="4">
+---+ Control Evidence
+</td> </tr>
+<tr><td colspan="4">%RENDERFOREDIT{field="ControlEvidence" format="$edit"}%</td></tr>
+</table>
+</div>
+
+<div class="widgetBlockTitle">Assessment <font size="1">by Local Internal Control Responsible</font></div>
+<div class="widgetBlockContent">
+
+<table class="metaDataHead" table-layout:fixed>
+<tr><td width="150px"><b>%MAKETEXT{"Control Rating"}%:</b></td><td colspan="2">%RENDERFOREDIT{field="ControlRating" ControlRating_default="" format="$edit"}%</td><td width="300px"></td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Comment"}%:</b>%BR%<em>Hint: Comment only when to be improved or non-existing</em></td><td width="300px">%RENDERFOREDIT{field="AssessmentComment" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Proposed Measure"}%:</b></td><td width="300px">%RENDERFOREDIT{field="MeasureAssessment" format="$edit"}%</td></tr>
+</table>
+</div>
+
+<div class="widgetBlockTitle">Assessment <font size="1">by Global Internal Control Manager</font></div>
+<div class="widgetBlockContent">
+
+<table class="metaDataHead" table-layout:fixed>
+<tr><td width="150px"><b>%MAKETEXT{"Evaluation"}%:</b></td><td width="300px">%RENDERFOREDIT{field="SpotCheckSM" format="$edit"}%</td><td width="150px"></td><td width="300px"></td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Comment"}%:</b></td><td width="300px">%RENDERFOREDIT{field="CommentSM" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Measure"}%:</b></td><td width="300px">%RENDERFOREDIT{field="MeasureSM" SpotCheckGlobal_default="" format="$edit"}%</td></tr>
+</table>
+</div>
+
+<div class="widgetBlockTitle">Assessment <font size="1">by Group Internal Audit/External Control</font></div>
+<div class="widgetBlockContent">
+
+<table class="metaDataHead" table-layout:fixed>
+<tr><td width="150px"><b>%MAKETEXT{"Evaluation"}%:</b></td><td width="300px">%RENDERFOREDIT{field="SpotCheckGlobal" format="$edit"}%</td><td width="150px"></td><td width="300px"></td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Comment"}%:</b></td><td width="300px">%RENDERFOREDIT{field="CommentGlobal" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Measure"}%:</b></td><td width="300px">%RENDERFOREDIT{field="MeasureGlobal" SpotCheckGlobal_default="" format="$edit"}%</td></tr>
+</table>
+</div>
+
+<div class="widgetBlockTitle">Risk Relevance</div>
+<div class="widgetBlockContent">
+  
+<table class="metaDataHead" table-layout:fixed>
+<tr><td width="300px"><b>%MAKETEXT{"Relevance"}%</b></td><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
+<tr><td>%RENDERFOREDIT{field="Relevance" format="$edit"}%</td><td>%RENDERFOREDIT{field="RiskLevel" format="$edit"}%</td><td>%RENDERFOREDIT{field="LegalEntity" format="$edit"}%</td></tr>
+</table>
+</div>
+
+
+%TMPL:P{"topicinfo"}%
+%TMPL:P{"formend"}%
+
+
+%RED%*%ENDCOLOR%) Mandatory Field
+
+%TMPL:END%
+
+
+%META:WORKFLOWHISTORY{value="<br />DRAFT -- 02.07.2015 -- %25WORKFLOWMETA%7bname=%22REMARK%22%7d%25"}%
+%META:WORKFLOW{name="DRAFT" LASTPROCESSOR_DRAFT="Main.MeckelC" LASTTIME_DRAFT="02.07.2015" LASTVERSION_DRAFT="1" LEAVING_NEW="Main.MeckelC" Remark="" Revision="0" TASK="" TASK_DUE=""}%
+%META:WRKFLWCONTRIBUTORS{name="DRAFT" value="Main.MeckelC,Main.KilianSchertlin"}%
+%META:PREFERENCE{name="DISPLAYCOMMENTS" title="DISPLAYCOMMENTS" type="Set" value="on"}%
+%META:PREFERENCE{name="DENYTOPICCOMMENT" title="DENYTOPICCOMMENT" type="Set" value="WikiGuest"}%
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%

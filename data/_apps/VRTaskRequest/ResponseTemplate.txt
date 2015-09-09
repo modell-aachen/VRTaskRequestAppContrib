@@ -1,0 +1,8 @@
+%META:TOPICINFO{author="schertlk" comment="" date="1441635908" format="1.1" version="8"}%
+
+
+%META:WORKFLOWHISTORY{value="<br />ENTRY -- 02.07.2015 -- %25WORKFLOWMETA%7bname=%22REMARK%22%7d%25"}%
+%META:WORKFLOW{name="ENTRY" LASTPROCESSOR_ENTRY="Main.MeckelC" LASTTIME_ENTRY="02.07.2015" LASTVERSION_ENTRY="1" LEAVING_NEW="Main.MeckelC" Remark="" Revision="0" TASK="" TASK_DUE=""}%
+%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="ResponseView"}%
+%META:PREFERENCE{name="EDIT_TEMPLATE" title="EDIT_TEMPLATE" type="Set" value="ResponseEdit"}%
+%META:PREFERENCE{name="DISPLAYCOMMENTS" title="DISPLAYCOMMENTS" type="Set" value="off"}%

@@ -1,0 +1,2 @@
+   * <a href="%SCRIPTURL{edit}%/%WEB%/RequestAUTOINC0000?templatetopic=RequestTemplate;template=RequestEdit;formtemplate=RequestForm">%MAKETEXT{"Create new request"}%</a>
+   * <a href="%SCRIPTURL{edit}%/%WEB%/EntityAUTOINC0000?formtemplate=EntityForm;nowysiwyg=1">%MAKETEXT{"Create new entity"}%</a>
