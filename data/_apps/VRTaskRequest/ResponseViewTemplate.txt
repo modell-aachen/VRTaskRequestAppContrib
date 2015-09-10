@@ -1,4 +1,3 @@
-%META:TOPICINFO{author="schertlk" comment="save topic" date="1441627779" format="1.1" reprev="8" version="12"}%
 %TMPL:INCLUDE{view}%
 
 %TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
@@ -76,10 +75,6 @@
 
 %TMPL:END%
 
-%META:WORKFLOWHISTORY{value="<br />DRAFT -- 02.07.2015 -- %25WORKFLOWMETA%7bname=%22REMARK%22%7d%25"}%
-%META:WORKFLOW{name="DRAFT" LASTPROCESSOR_DRAFT="Main.MeckelC" LASTTIME_DRAFT="02.07.2015" LASTVERSION_DRAFT="1" LEAVING_NEW="Main.MeckelC" Remark="" Revision="0" TASK="" TASK_DUE=""}%
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
-%META:PREFERENCE{name="ALLOWTOPICVIEW" title="ALLOWTOPICVIEW" type="Set" value=""}%
 %META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
-%META:WRKFLWCONTRIBUTORS{name="DRAFT" value="Main.MeckelC,Main.KilianSchertlin"}%

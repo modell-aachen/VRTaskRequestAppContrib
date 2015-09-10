@@ -1,4 +1,3 @@
-%META:TOPICINFO{author="schertlk" comment="reprev" date="1441712934" format="1.1" reprev="30" version="30"}%
 %TMPL:INCLUDE{view}%
 
 %TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
@@ -103,8 +102,6 @@
 </table>
 </div>
 
-
-
 %TMPL:P{"topicinfo"}%
 %TMPL:P{"formend"}%
 
@@ -191,10 +188,5 @@
 </div>
 %TMPL:END%
 
-%META:WORKFLOWHISTORY{value="<br />DRAFT -- 15.06.2015"}%
-%META:WORKFLOW{name="DRAFT" LASTPROCESSOR_DRAFT="Main.KilianSchertlin" LASTTIME_DRAFT="15.06.2015" LASTVERSION_DRAFT="1" LEAVING_NEW="Main.KilianSchertlin" Remark="" Revision="0" TASK="" TASK_DUE=""}%
-%META:WRKFLWCONTRIBUTORS{name="DRAFT" value="Main.KilianSchertlin"}%
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
-%META:PREFERENCE{name="ALLOWTOPICVIEW" title="ALLOWTOPICVIEW" type="Set" value=""}%
-%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%

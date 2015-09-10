@@ -1,4 +1,3 @@
-%META:TOPICINFO{author="schertlk" comment="save topic" date="1441712553" format="1.1" reprev="29" version="30"}%
 %META:TOPICPARENT{name="WebHome"}%
 | *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
 | Date | date | 50 | %DATE% | | dummyforattr="H" |
@@ -130,9 +129,6 @@
 | LE31 | select | 1 | , BR02 Von Roll do Brasil Ltda., CH02 Von Roll Schweiz AG, CH05 Von Roll Solar AG, CH06 Von Roll Holding AG, CH07 Von Roll Insulation & Composites Holding AG, CH08 Von Roll Management AG, CH09 Von Roll Water Holding AG, CH10 Von Roll Finance AG, CN02 Von Roll Shanghai Co. Ltd, CN03 Von Roll Trading Shanghai Co. Ltd., CN04 New Jadwson Electrical Material (SZ) Co., CN05 Mica Electric Material (Lu He) Co. Ltd., CN07 Tongcheng Xinyu Mica Products Co. Ltd., CN08 Tongcheng Mica Electric Material Co. Ltd, DE01 Von Roll Deutschland Holding GmbH, DE03 Von Roll Deutschland GmbH, DE06 Von Roll Reach GmBH, DE07 BHU Umwelttechnik GmbH, FR02 Von Roll France S.A., FR04 Von Roll Isola France S.A., GB01 Von Roll UK Ltd, Group Von Roll Group (Consolidation), IN01 Von Roll India Pvt Ltd, IN02 Pearl Insulations Pvt. Ltd, IT01 Von Roll Italia SpA, IT02 Albesiano Sisa Vernici S.r.l., SG01 Von Roll Asia Pte Ltd, US01 Von Roll USA - Schenectady, US02 Von Roll Austral Inc., US04 John C. Dolph Company | | |
 | LE32 | select | 1 | , BR02 Von Roll do Brasil Ltda., CH02 Von Roll Schweiz AG, CH05 Von Roll Solar AG, CH06 Von Roll Holding AG, CH07 Von Roll Insulation & Composites Holding AG, CH08 Von Roll Management AG, CH09 Von Roll Water Holding AG, CH10 Von Roll Finance AG, CN02 Von Roll Shanghai Co. Ltd, CN03 Von Roll Trading Shanghai Co. Ltd., CN04 New Jadwson Electrical Material (SZ) Co., CN05 Mica Electric Material (Lu He) Co. Ltd., CN07 Tongcheng Xinyu Mica Products Co. Ltd., CN08 Tongcheng Mica Electric Material Co. Ltd, DE01 Von Roll Deutschland Holding GmbH, DE03 Von Roll Deutschland GmbH, DE06 Von Roll Reach GmBH, DE07 BHU Umwelttechnik GmbH, FR02 Von Roll France S.A., FR04 Von Roll Isola France S.A., GB01 Von Roll UK Ltd, Group Von Roll Group (Consolidation), IN01 Von Roll India Pvt Ltd, IN02 Pearl Insulations Pvt. Ltd, IT01 Von Roll Italia SpA, IT02 Albesiano Sisa Vernici S.r.l., SG01 Von Roll Asia Pte Ltd, US01 Von Roll USA - Schenectady, US02 Von Roll Austral Inc., US04 John C. Dolph Company | | |
 
-%META:WORKFLOWHISTORY{value="<br />DRAFT -- 15.06.2015"}%
-%META:WORKFLOW{name="DRAFT" LASTPROCESSOR_DRAFT="Main.KilianSchertlin" LASTTIME_DRAFT="15.06.2015" LASTVERSION_DRAFT="1" LEAVING_NEW="Main.KilianSchertlin" Remark="" Revision="0" TASK="" TASK_DUE=""}%
-%META:WRKFLWCONTRIBUTORS{name="DRAFT" value="Main.KilianSchertlin,Main.MeckelC"}%
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
 %META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
