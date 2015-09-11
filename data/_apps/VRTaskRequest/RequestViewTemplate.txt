@@ -67,10 +67,10 @@
 
 <table class="metaDataHead" table-layout:fixed>
 <tr><td width="200px"><b></b></td><td width="100px"><b>%MAKETEXT{"Relevance"}%</b></td><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
-<tr><td>%TMPL:P{"createproject1"}%</td><td>%RENDERFORDISPLAY{field="REL01" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL01" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE01" format="$value"}%</td></tr>
-<tr><td>%TMPL:P{"createproject2"}%</td><td>%RENDERFORDISPLAY{field="REL02" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL02" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE02" format="$value"}%</td></tr>
-<tr><td>%TMPL:P{"createproject3"}%</td><td>%RENDERFORDISPLAY{field="REL03" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL03" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE03" format="$value"}%</td></tr>
-<tr><td>%TMPL:P{"createproject4"}%</td><td>%RENDERFORDISPLAY{field="REL04" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL04" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE04" format="$value"}%</td></tr>
+<tr><td></td><td>%RENDERFORDISPLAY{field="REL01" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL01" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE01" format="$value"}%</td></tr>
+<tr><td></td><td>%RENDERFORDISPLAY{field="REL02" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL02" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE02" format="$value"}%</td></tr>
+<tr><td></td><td>%RENDERFORDISPLAY{field="REL03" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL03" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE03" format="$value"}%</td></tr>
+<tr><td></td><td>%RENDERFORDISPLAY{field="REL04" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL04" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE04" format="$value"}%</td></tr>
 <tr><td></td><td>%RENDERFORDISPLAY{field="REL05" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL05" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE05" format="$value"}%</td></tr>
 <tr><td></td><td>%RENDERFORDISPLAY{field="REL06" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL06" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE06" format="$value"}%</td></tr>
 <tr><td></td><td>%RENDERFORDISPLAY{field="REL07" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RL07" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LE07" format="$value"}%</td></tr>
@@ -107,86 +107,6 @@
 
 %TMPL:END%
 
-%TMPL:DEF{"createproject1"}%
-<div>
-<form method="post" action="%SCRIPTURLPATH{"edit"}%/%BASEWEB%/ResponseAUTOINC000000">
-  <input type="hidden" name="template" value="%WEB%.ResponseEdit"/>
-  <input type="hidden" name="templatetopic" value="%WEB%.ResponseTemplate"/>
-  <input type="hidden" name="topicparent" value="%BASEWEB%.%BASETOPIC%"/>
-  <input type="hidden" name="formtemplate" value="RequestForm"/>
-  <input type="hidden" name="t" value="%GMTIME{$epoch}%"/>
-  <input type="hidden" name="Process" value="%QUERY{"Process"}%"/>
-  <input type="hidden" name="ICSControlNo" value="%QUERY{"ICSControlNo"}%"/>
-  <input type="hidden" name="ControlObjective" value="%QUERY{"ControlObjective"}%"/>
-  <input type="hidden" name="ControlProcedure" value="%QUERY{"ControlProcedure"}%"/>
-  <input type="hidden" name="ControlEvidence" value="%QUERY{"ControlEvidence"}%"/>
-  <input type="hidden" name="Relevance" value="%QUERY{"REL01"}%"/>
-  <input type="hidden" name="RiskLevel" value="%QUERY{"RL01"}%"/>
-  <input type="hidden" name="LegalEntity" value="%QUERY{"LE01"}%"/>
-  %BUTTON{"%MAKETEXT{"Create IC Response"}%" type="submit"}%
-  </form>
-</div>
-%TMPL:END%
-
-%TMPL:DEF{"createproject2"}%
-<div>
-<form method="post" action="%SCRIPTURLPATH{"edit"}%/%BASEWEB%/ICAUTOINC000000">
-  <input type="hidden" name="template" value="%WEB%.ICTaskResponseEdit"/>
-  <input type="hidden" name="templatetopic" value="%WEB%.ICTaskResponseTemplate"/>
-  <input type="hidden" name="formtemplate" value="ICTaskRequestForm"/>
-  <input type="hidden" name="t" value="%GMTIME{$epoch}%"/>
-  <input type="hidden" name="Process" value="%QUERY{"Process"}%"/>
-  <input type="hidden" name="ICSControlNo" value="%QUERY{"ICSControlNo"}%"/>
-  <input type="hidden" name="ControlObjective" value="%QUERY{"ControlObjective"}%"/>
-  <input type="hidden" name="ControlProcedure" value="%QUERY{"ControlProcedure"}%"/>
-  <input type="hidden" name="ControlEvidence" value="%QUERY{"ControlEvidence"}%"/>
-  <input type="hidden" name="Relevance" value="%QUERY{"REL02"}%"/>
-  <input type="hidden" name="RiskLevel" value="%QUERY{"RL02"}%"/>
-  <input type="hidden" name="LegalEntity" value="%QUERY{"LE02"}%"/>
-  %BUTTON{"%MAKETEXT{"Create IC Response"}%" type="submit"}%
-  </form>
-</div>
-%TMPL:END%
-
-%TMPL:DEF{"createproject3"}%
-<div>
-<form method="post" action="%SCRIPTURLPATH{"edit"}%/%BASEWEB%/ICAUTOINC000000">
-  <input type="hidden" name="template" value="%WEB%.ICTaskResponseEdit"/>
-  <input type="hidden" name="templatetopic" value="%WEB%.ICTaskResponseTemplate"/>
-  <input type="hidden" name="formtemplate" value="ICTaskRequestForm"/>
-  <input type="hidden" name="t" value="%GMTIME{$epoch}%"/>
-  <input type="hidden" name="Process" value="%QUERY{"Process"}%"/>
-  <input type="hidden" name="ICSControlNo" value="%QUERY{"ICSControlNo"}%"/>
-  <input type="hidden" name="ControlObjective" value="%QUERY{"ControlObjective"}%"/>
-  <input type="hidden" name="ControlProcedure" value="%QUERY{"ControlProcedure"}%"/>
-  <input type="hidden" name="ControlEvidence" value="%QUERY{"ControlEvidence"}%"/>
-  <input type="hidden" name="Relevance" value="%QUERY{"REL03"}%"/>
-  <input type="hidden" name="RiskLevel" value="%QUERY{"RL03"}%"/>
-  <input type="hidden" name="LegalEntity" value="%QUERY{"LE03"}%"/>
-  %BUTTON{"%MAKETEXT{"Create IC Response"}%" type="submit"}%
-  </form>
-</div>
-%TMPL:END%
-
-%TMPL:DEF{"createproject4"}%
-<div>
-<form method="post" action="%SCRIPTURLPATH{"edit"}%/%BASEWEB%/ICAUTOINC000000">
-  <input type="hidden" name="template" value="%WEB%.ICTaskResponseEdit"/>
-  <input type="hidden" name="templatetopic" value="%WEB%.ICTaskResponseTemplate"/>
-  <input type="hidden" name="formtemplate" value="ICTaskRequestForm"/>
-  <input type="hidden" name="t" value="%GMTIME{$epoch}%"/>
-  <input type="hidden" name="Process" value="%QUERY{"Process"}%"/>
-  <input type="hidden" name="ICSControlNo" value="%QUERY{"ICSControlNo"}%"/>
-  <input type="hidden" name="ControlObjective" value="%QUERY{"ControlObjective"}%"/>
-  <input type="hidden" name="ControlProcedure" value="%QUERY{"ControlProcedure"}%"/>
-  <input type="hidden" name="ControlEvidence" value="%QUERY{"ControlEvidence"}%"/>
-  <input type="hidden" name="Relevance" value="%QUERY{"REL04"}%"/>
-  <input type="hidden" name="RiskLevel" value="%QUERY{"RL04"}%"/>
-  <input type="hidden" name="LegalEntity" value="%QUERY{"LE04"}%"/>
-  %BUTTON{"%MAKETEXT{"Create IC Response"}%" type="submit"}%
-  </form>
-</div>
-%TMPL:END%
 
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
