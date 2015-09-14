@@ -8,6 +8,7 @@ data/_apps/VRTaskRequest/RequestTemplate.txt 0664
 data/_apps/VRTaskRequest/RequestViewTemplate.txt 0664
 data/_apps/VRTaskRequest/RequestWorkflow.txt 0664
 data/_apps/VRTaskRequest/ResponseEditTemplate.txt 0664
+data/_apps/VRTaskRequest/ResponseForm.txt 0664
 data/_apps/VRTaskRequest/ResponseTemplate.txt 0664
 data/_apps/VRTaskRequest/ResponseViewTemplate.txt 0664
 data/_apps/VRTaskRequest/WebActions.txt 0664

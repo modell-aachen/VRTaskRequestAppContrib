@@ -50,14 +50,14 @@
 <div style="display:none;">
 %STARTSECTION{"searchICResponses"}%
 <form class="searchFilter" action="%SCRIPTURLPATH{view}%/%BASEWEB%/%BASETOPIC%">
-  <div class="searchFilterSingle">%MAKETEXT{"Legal Entity"}%: <label><input type="checkbox" name="filter_entity" value="*" %IF{"'%URLPARAM{"filter_entity" default="*"}%'=~'\*'" then=" checked=\"checked\""}% /> %MAKETEXT{"All Entities"}%</label> %SOLRSEARCH{"(form:ICTaskRequestForm) type:topic -topic:*Template -topic:*Form" facets="LegalEntity=field_LegalEntity_s" format_field_LegalEntity_s="<label><input type=\"checkbox\" name=\"filter_entity\" value=\"$key\" $percntIF{\"'%URLPARAM{"filter_entity" multiple="on" separator=","}%'=~'\b$key\b'\" then=\"checked=\\"checked\\" \"}$percnt/> $key ($count)</label>"}%</div>
+  <div class="searchFilterSingle">%MAKETEXT{"Legal Entity"}%: <label><input type="checkbox" name="filter_entity" value="*" %IF{"'%URLPARAM{"filter_entity" default="*"}%'=~'\*'" then=" checked=\"checked\""}% /> %MAKETEXT{"All Entities"}%</label> %SOLRSEARCH{"(form:ICTaskResponseForm) type:topic -topic:*Template -topic:*Form" facets="LegalEntity=field_LegalEntity_s" format_field_LegalEntity_s="<label><input type=\"checkbox\" name=\"filter_entity\" value=\"$key\" $percntIF{\"'%URLPARAM{"filter_entity" multiple="on" separator=","}%'=~'\b$key\b'\" then=\"checked=\\"checked\\" \"}$percnt/> $key ($count)</label>"}%</div>
   <input type="hidden" name="tabselect" value="%tabid%" />
   %BUTTON{type="submit" "%MAKETEXT{"Update"}%"}%
 </form>
 %TABLE{%TABLETHEMEPARAM%}%
 | *%MAKETEXT{"Task Response No."}%* | *%MAKETEXT{"Assessment Date"}%* | *%MAKETEXT{"Process"}%* | *%MAKETEXT{"ICS Control No."}%* | *%MAKETEXT{"Legal Entity"}%* | *%MAKETEXT{"Evaluation"}%* | *%MAKETEXT{"Responder"}%*  | *%MAKETEXT{"Comment"}%* | *%MAKETEXT{"Proposed Measure"}%* |
 %SOLRSEARCH{
-"field_DocumentType_s:\"%documenttype%\" form:RequestForm -topic:*Template -topic:*Form"
+"field_DocumentType_s:\"%documenttype%\" form:ResponseForm -topic:*Template -topic:*Form"
 web="%WEB%"
 fields="web,topic, field_Date_dt, field_Process_s, field_ICSControlNo_s, field_LegalEntity_s, field_ControlRating_s, author, field_AssessmentComment_s, field_MeasureAssessment_s,"
 format="| [[$web.$topic]] | $field_Date_dt | $field_Process_s | $field_ICSControlNo_s | $field_LegalEntity_s | $field_ControlRating_s | $author | $field_AssessmentComment_s | $field_MeasureAssessment_s |$n" 
@@ -79,7 +79,7 @@ sort="date desc"
 %TABLE{%TABLETHEMEPARAM%}%
 | *%MAKETEXT{"Task Request No."}%* | *%MAKETEXT{"Internal Control No."}%* | *%MAKETEXT{"Control Type"}%* | *%MAKETEXT{"Control Indicator"}%*  | *%MAKETEXT{"Control Frequency"}%* |
 %SOLRSEARCH{ 
-"form:RequestForm field_DocumentType_s:\"%documenttype%\" field_Process_s:%process% -topic:*Template -topic:*Form" 
+"form:ResponseForm field_DocumentType_s:\"%documenttype%\" field_Process_s:%process% -topic:*Template -topic:*Form" 
 web="%WEB%" 
 fields="web,topic,field_ICSControlNo_s,field_ControlType_s,field_ControlIndicator_s,field_ControlFrequency_s" 
 format="| [[$web.$topic]] | $field_ICSControlNo_s | $field_ControlType_s | $field_ControlIndicator_s| $field_ControlFrequency_s |$n" 

@@ -1,0 +1,38 @@
+%META:TOPICPARENT{name="WebHome"}%
+| *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
+| Date | date | 50 | %DATE% | | dummyforattr="H" |
+| DocumentType | select | 1 | Infopage, Internal Control Response, Internal Control Request | | |
+| TaskRequestNo | text | 50 | | | |
+| Process | select2 | 50 | , Sales, Procurement, HR-Payroll, Finance-Closing, Finance-Investment, Finance-Tax  | | |
+| ICSControlNo | select | 1 | , 1.1 Ethnic Values, 1.2 Organization and Structure, 1.3 Risk Management, 1.4 Risk of Fraud, 1.5 Internal Audit, 1.6 Human Resources, 2.1 Customer Master Data, 2.1G Customer Master Data, 2.2 Article Master Data, 2.2G Article Master Data, 2.3 Credit Limit, 2.3G Credit Limit, 2.4 Order Entry/Discount/Return, 2.5 Production, 2.6 Work in Progress, 2.7 Invoice Issued, 2.8 Due Receivables/Bad Debt, 2.8G Due Receivables/Bad Debt, 2.9 Incoming Payment, 2.10 Other significant Processes, 3.1 Supplier Master Data, 3.1G Supplier Master Data, 3.2 Article Master Data, 3.2G Article Master Data, 3.3 Purchase of Goods and Services, 3.3G Purchase of Goods and Services, 3.4 Goods received, 3.5 Invoice received, 3.5G Invoice received, 3.6 Stocks, 3.7 Copper, 3.8 Outgoing Payment, 3.9 Other significant Processes, 4.1 Investment / Divestment, 4.1G Investment / Divestment, 4.2 Loan, 4.3 Other significant Processes, 5.1 Personal Master Data, 5.2 Expense Payment, 5.3 Bonus Payment, 5.4 Salary Payment, 5.5 Social Security, 5.6 Other significant Processes, 6.1 Tax General, 6.2 Accounting Treatment of Tax, 6.3 Value Added Tax (VAT), 6.4 Other significant Processes, 7.1 Closing Plannig, 7.2 Period Closing, 7.2G Period Closing, 7.3 Accruals/deferreals, 7.4 GR/IR Account Provisions, 7.5 Bonus and social security provision, 7.6 Holiday Provision, 7.7 Legal case provision, 7.8 Other provision, 7.9 Provisions/allowance for bad debt, 7.10 Bank Authorization, 7.11 Reconciliation cash and cash equivalent accounts, 7.12 Reconciliation accounts payables and accounts receivables, 7.12G Reconciliation accounts payables and accounts receivables, 7.13 Reconciliation fixed asset, 7.13G Reconciliation fixed asset, 7.14 Reconciliation material, 7.14G Reconciliation material, 7.15 Reconciliation IC (BS and P&L), 7.15G Reconciliation IC (BS and P&L), 7.16 Reconciliation other balance sheet position, 7.17 Valuation foreign exchange, 7.17G Valuation foreign exchange, 7.18 Valuation general, 7.19 Statutory reporting, 7.20 Equity, 7.21 IFRS transition, 7.22 Reporting HFM, 7.22G Reporting HFM, 7.23 Other significant processes | | |
+| ControlObjective | textarea | 195x3 | | | |
+| ControlProcedure | textarea | 195x3 | | | |
+| ControlEvidence | textarea | 195x3 | | | |
+| SelfAssessment | radio+values | 3 | %MAKETEXT{"Fully implemented"}%=1, %MAKETEXT{"Partly implemented"}%=2, %MAKETEXT{"Not implemented"}%=3 | | |
+| AssessmentComment | textarea | 55x3 | | | |
+| MeasureAssessment | textarea | 55x3 | | | | | |
+| SpotCheckLocal | radio +values | 2 | Check OK, Check not OK | | |
+| CommentLocal | textarea | 55x3 | | | |
+| MeasureLocal | textarea | 55x3 | | | |
+| SpotCheckGlobal | radio +values | 2 | Check OK, Check not OK | | |
+| CommentGlobal | textarea | 55x3 | | | |
+| MeasureGlobal | textarea | 55x3 | | | |
+| SpotCheckSM | radio +values | 2 | Check OK, Check not OK | | |
+| CommentSM | textarea | 55x3 | | | |
+| MeasureSM | textarea | 55x3 | | | |
+| Country | select+values | 1 | %COUNTRYVALUES% | | |
+| LegalEntity | select+values | 1 | %ENTITYVARIABLES% | | |
+| Site | select+values | 1 | %SITEVALUES% | | |
+| ControlFrequency | select | 1 | ,transactional,monthly,quarterly,half-yearly,yearly | | |
+| IssueDate | text | 50 | | | |
+| DueDate | text | 50 | | DueDate | |
+| ControlType | select | 1 | ,preventing,detecting | | |
+| ControlIndicator | select | 1 | ,automated,half-automated,manual | | |
+| ControlRating | radio+values | 3 | %MAKETEXT{"effective"}%=1, %MAKETEXT{"to be improved"}%=2, %MAKETEXT{"non-existing"}%=3 | | |
+| RiskLevel | select | 1 | ,0,1,2,3,4,5,6,7,8,9,10 | | |
+| Relevance | checkbox+values | 1 | relevant | | |
+| TransactionSAP | text | 50 | | | |
+
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
