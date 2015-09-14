@@ -30,7 +30,6 @@
 | ControlIndicator | select | 1 | ,automated,half-automated,manual | | |
 | ControlRating | radio+values | 3 | %MAKETEXT{"effective"}%=1, %MAKETEXT{"to be improved"}%=2, %MAKETEXT{"non-existing"}%=3 | | |
 | RiskLevel | select | 1 | ,0,1,2,3,4,5,6,7,8,9,10 | | |
-| Relevance | checkbox+values | 1 | relevant | | |
 | TransactionSAP | text | 50 | | | |
 
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%

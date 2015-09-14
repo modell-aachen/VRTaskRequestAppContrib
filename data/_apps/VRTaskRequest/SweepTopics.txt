@@ -1,4 +1,4 @@
 | *Action* | *Type* | *Web* | *Query* |
-| expand("Transition($percentFORMATLIST{\"01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32\" format=\"$dollarpercentIF{\\"REL$dollar1='relevant'\\" then=\\"{state=\\\"ENTRY\\\" action=\\\"Create response\\\" param=\\\"RE=$dollarpercentQUERY{REL$dollar1}$dollarpercent\\\" param=\\\"RL=$dollarpercentQUERY{RL$dollar1}$dollarpercent\\\" param=\\\"LE=$dollarpercentQUERY{LE$dollar1}$dollarpercent\\\"}\\"}$dollarpercent\" separator=\"\"}$percent)") | SolrSearch |  | topic:Request* -topic:*Template process_state_s:ENTRY |
+| expand("Transition($percentFORMATLIST{\"01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32\" format=\"$dollarpercentIF{\\"RL$dollar1>3\\" then=\\"{state=\\\"ENTRY\\\" action=\\\"Create response\\\" param=\\\"RL=$dollarpercentQUERY{RL$dollar1}$dollarpercent\\\" param=\\\"LE=$dollarpercentQUERY{LE$dollar1}$dollarpercent\\\"}\\"}$dollarpercent\" separator=\"\"}$percent)") | SolrSearch |  | topic:Request* -topic:*Template process_state_s:ENTRY |
 
 %INCLUDE{"%SYSTEMWEB%.SweepTopicsPlugin" section="TestButton"}%

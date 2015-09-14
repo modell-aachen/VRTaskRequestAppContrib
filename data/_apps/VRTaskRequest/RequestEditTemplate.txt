@@ -45,39 +45,39 @@
 <div class="widgetBlockContent">
   
 <table class="metaDataHead" table-layout:fixed>
-<tr><td width="300px"><b>%MAKETEXT{"Relevance"}%</b></td><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
-<tr><td>%RENDERFOREDIT{field="REL01" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL01" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE01" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL02" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL02" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE02" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL03" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL03" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE03" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL04" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL04" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE04" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL05" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL05" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE05" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL06" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL06" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE06" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL07" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL07" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE07" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL08" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL08" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE08" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL09" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL09" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE09" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL10" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL10" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE10" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL11" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL11" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE11" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL12" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL12" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE12" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL13" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL13" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE13" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL14" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL14" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE14" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL15" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL15" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE15" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL16" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL16" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE16" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL17" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL17" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE17" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL18" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL18" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE18" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL19" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL19" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE19" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL20" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL20" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE20" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL21" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL21" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE21" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL22" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL22" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE22" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL23" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL23" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE23" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL24" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL24" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE24" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL25" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL25" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE25" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL26" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL26" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE26" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL27" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL27" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE27" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL28" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL28" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE28" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL29" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL29" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE29" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL30" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL30" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE30" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL31" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL31" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE31" format="$edit"}%</td></tr>
-<tr><td>%RENDERFOREDIT{field="REL32" format="$edit"}%</td><td>%RENDERFOREDIT{field="RL32" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE32" format="$edit"}%</td></tr>
+<tr><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
+<tr><td>%RENDERFOREDIT{field="RL01" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE01" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL02" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE02" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL03" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE03" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL04" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE04" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL05" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE05" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL06" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE06" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL07" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE07" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL08" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE08" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL09" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE09" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL10" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE10" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL11" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE11" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL12" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE12" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL13" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE13" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL14" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE14" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL15" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE15" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL16" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE16" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL17" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE17" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL18" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE18" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL19" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE19" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL20" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE20" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL21" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE21" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL22" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE22" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL23" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE23" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL24" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE24" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL25" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE25" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL26" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE26" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL27" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE27" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL28" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE28" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL29" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE29" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL30" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE30" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL31" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE31" format="$edit"}%</td></tr>
+<tr><td>%RENDERFOREDIT{field="RL32" format="$edit"}%</td><td>%RENDERFOREDIT{field="LE32" format="$edit"}%</td></tr>
 </table>
 </div>
 
