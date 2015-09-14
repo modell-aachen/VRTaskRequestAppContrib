@@ -25,6 +25,7 @@
 | APPROVALBYMANAGER | Approve this Request | APPROVED | MeckelC | %WORKFLOWMETA{"LASTPROCESSOR_ENTRY"}% | on | | REMARK |
 | APPROVALBYMANAGER | Request further Revision | ENTRY | MeckelC | %WORKFLOWMETA{"LASTPROCESSOR_ENTRY"}% | on | | REMARK |
 | APPROVED | Start new discussion. | DISCUSSION | LOGGEDIN | | on | | FORK |
+| ENTRY | Create response | RESPONSE | LOGGEDIN | | | | SETFORM(ResponseForm) SETFIELD(LegalEntity="$percentLE{default=$quot$quot}$percent") SETFIELD(RiskLevel="$percentRL{default=$quot$quot}$percent") SETFIELD(Relevance="$percentREL{default=$quot$quot}$percent") FORK("ResponseAUTOINC0000") SETPREF("WORKFLOW=ResponseWorkflow") |
 
    * Set NOWYSIWYG = 1
    * Set VIEW_TEMPLATE = WorkflowView

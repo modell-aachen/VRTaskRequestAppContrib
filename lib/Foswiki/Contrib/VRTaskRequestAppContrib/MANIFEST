@@ -11,6 +11,8 @@ data/_apps/VRTaskRequest/ResponseEditTemplate.txt 0664
 data/_apps/VRTaskRequest/ResponseForm.txt 0664
 data/_apps/VRTaskRequest/ResponseTemplate.txt 0664
 data/_apps/VRTaskRequest/ResponseViewTemplate.txt 0664
+data/_apps/VRTaskRequest/ResponseWorkflow.txt 0664
+data/_apps/VRTaskRequest/SweepTopics.txt 0664
 data/_apps/VRTaskRequest/WebActions.txt 0664
 data/_apps/VRTaskRequest/WebAtom.txt 0664
 data/_apps/VRTaskRequest/WebChanges.txt 0664

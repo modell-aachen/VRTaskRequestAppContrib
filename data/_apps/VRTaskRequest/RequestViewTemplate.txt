@@ -40,23 +40,12 @@
 <tr><td><b>%MAKETEXT{"Control Frequency"}%:</b></td><td>%RENDERFORDISPLAY{field="ControlFrequency" format="$value"}%</td><td><b>%MAKETEXT{"Task Issue Date"}%:</b></td><td>%RENDERFORDISPLAY{field="IssueDate" format="$value"}%</td></tr>
 <tr><td><b>Transaction SAP:</b></td><td>%RENDERFORDISPLAY{field="TransactionSAP" format="$value"}%</td><td> </td><td> </td></tr>
 <tr><td colspan="4">
-%WORKFLOWFORK{newnames="PeterResponse,RudolfResponse"}% 
-
-<form method="post" action="%SCRIPTURLPATH{"rest"}%/KVPPlugin/fork?newnames=PetersAnswer">
-  <input type="hidden" name="template" value="%WEB%.ResponseEdit"/>
-  <input type="hidden" name="templatetopic" value="%WEB%.ResponseTemplate"/>
-  <input type="hidden" name="topicparent" value="%BASEWEB%.%BASETOPIC%"/>
-  <input type="hidden" name="formtemplate" value="RequestForm"/>
-  <input type="hidden" name="t" value="%GMTIME{$epoch}%"/>
-  <input type="hidden" name="Process" value="%QUERY{"Process"}%"/>
-  <input type="hidden" name="ICSControlNo" value="%QUERY{"ICSControlNo"}%"/>
-  <input type="hidden" name="ControlObjective" value="%QUERY{"ControlObjective"}%"/>
-  <input type="hidden" name="ControlProcedure" value="%QUERY{"ControlProcedure"}%"/>
-  <input type="hidden" name="ControlEvidence" value="%QUERY{"ControlEvidence"}%"/>
-  <input type="hidden" name="Relevance" value="%QUERY{"REL01"}%"/>
-  <input type="hidden" name="RiskLevel" value="%QUERY{"RL01"}%"/>
-  <input type="hidden" name="LegalEntity" value="%QUERY{"LE01"}%"/>
-  %BUTTON{"%MAKETEXT{"Create IC Response Sets"}%" type="submit"}%
+  <form method="post" action="%SCRIPTURLPATH{"rest"}%/KVPPlugin/fork">
+    <input type="hidden" name="topicparent" value="%BASEWEB%.%BASETOPIC%" />
+    <input type="hidden" name="topic" value="%WEB%.%TOPIC%" />
+    <input type="hidden" name="skipempty" value="1" />
+    <input type="hidden" name="newnames" value="%FORMATLIST{"01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32" format="$percentIF{\"REL$1='relevant'\" then=\"[%WEB%.ResponseAUTOINC000000][Create response] with REL='$percentQUERY{REL$1}$percent' RL='$percentQUERY{RL$1}$percent' LE='$percentQUERY{LE$1}$percent'\"}$percent"}%" />
+    %BUTTON{"%MAKETEXT{"Create IC Response Sets"}%" type="submit"}%
   </form>
   </td><tr>
 </table>

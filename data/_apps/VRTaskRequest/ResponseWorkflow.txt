@@ -1,0 +1,26 @@
+---++ Defaults
+| *State type* | *Left tab* | *Right tab* | *Approved* |
+| approved | Request | Discussion | 1 |
+| draft | Request | Draft | 0 |
+| discussion | Request | Discussion | 0 |
+
+---++ States
+%EDITTABLE{}%
+| *State* | *Allow Edit* | *Allow Move* | *Allow Comment* | *Message* | *State Type* |
+| APPROVALBYMANAGER | MeckelC,KeyUserGroup | | | This Request is waiting for approval by the Global Internal Control manager. | draft |
+| RESPONSE | KeyUserGroup | | | Response. | approved |
+
+ 
+---++ Transitions
+%EDITTABLE{}%
+| *State* | *Action* | *Next State* | *Allowed* | *Notify* | *Condition* | *Warning* | *Attribute* |
+| RESPONSE | Request for approval | APPROVALBYMANAGER | LOGGEDIN | MeckelC | on | | REMARK |
+
+   * Set NOWYSIWYG = 1
+   * Set VIEW_TEMPLATE = WorkflowView
+   * Set ALLOWTOPICCHANGE = AdminGroup
+
+
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Local" value="1"}%
+%META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
