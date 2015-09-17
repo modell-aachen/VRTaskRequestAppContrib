@@ -7,7 +7,6 @@
 
 <div style="display:none;">
 %RENDERFORDISPLAY{field="Date" format="$value"}%
-%RENDERFORDISPLAY{field="DocumentType" type="Set" value="Internal Control Response"}%
 </div>
 
 
@@ -15,7 +14,7 @@
 <tr> <td colspan="6">
 ---+ Process Relevance
 </td> </tr>
-<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="Process" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ICSControlNo" format="$value"}%</td><td><b>%MAKETEXT{"Task Request No."}%:</b></td><td>[[%RENDERFORDISPLAY{field="TaskRequestNo" format="$value"}%]]</td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="Process" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ICSControlNo" format="$value"}% %RENDERFORDISPLAY{field="SubProcess" format="$value"}%</td><td><b>%MAKETEXT{"Task Request No."}%:</b></td><td>[[%RENDERFORDISPLAY{field="TaskRequestNo" format="$value"}%]]</td></tr>
 <tr> <td colspan="6">
 ---+ Control Objective
 </td> </tr>
@@ -63,8 +62,8 @@
 <div class="widgetBlockContent">
 
 <table class="metaDataHead" table-layout:fixed>
-<tr><td width="300px"><b>%MAKETEXT{"Relevance"}%</b></td><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
-<tr><td>%RENDERFORDISPLAY{field="Relevance" format="$value"}%</td><td>%RENDERFORDISPLAY{field="RiskLevel" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LegalEntity" format="$value"}%</td></tr>
+<tr><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
+<tr><td>%RENDERFORDISPLAY{field="RiskLevel" format="$value"}%</td><td>%RENDERFORDISPLAY{field="LegalEntity" format="$value"}%</td></tr>
 </table>
 </div>
 

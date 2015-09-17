@@ -1,115 +1,44 @@
 %META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1441803347" format="1.1" reprev="36" version="2"}%
 %TMPL:P{"simpleheader"}%
-<div class="widgetBlockTitle"><span>%MAKETEXT{"Internal Control Cockpit"}%</span></div>
-<div class="widgetBlockContent">
-| [[%PUBURL%/ProcessWebs/IC/InternalControlCockpit/IC_Cockpit_2015.xlsx][<img alt="" src="%ATTACHURLPATH%/IC_Analysis.png" style="width: 174px; height: 100px;" />]] | | [[ProcessWebs.IC.InternalControlArchive][<img alt="" src="%ATTACHURLPATH%/IC_Archiv.png" style="width: 171px; height: 100px;" />]] | | [[ProcessWebs.IC.InternalControlCockpit][<img alt="" src="%ATTACHURLPATH%/IC_Cockpit.png" style="width: 171px; height: 100px;" />]] |
+<div class="widgetBlockTitle"><span>%MAKETEXT{"Internal Control Cockpit"}%</span></div> <div class="widgetBlockContent">
+
+| <img alt="" src="%ATTACHURLPATH%/IC_Analysis.png" style="width: 174px; height: 100px;" /> | | <img alt="" src="%ATTACHURLPATH%/IC_Archiv.png" style="width: 171px; height: 100px;" /> | | <img alt="" src="%ATTACHURLPATH%/IC_Cockpit.png" style="width: 171px; height: 100px;" /> |
+
 </div>
 
 %TMPL:P{"contentfooter"}%
-<div class="widgetBlockTitle">%MAKETEXT{"Internal Control Topics"}%</div> 
-<div class="widgetBlockContent">
-%TABPANE{class="simple" select="%URLPARAM{table}%" select="%URLPARAM{"tabselect" default="1"}%"}%
-%TAB{"Internal Control Responses" aspectid="1"}%
-%TABPANE{class="simple" select="%URLPARAM{table}%" select="%URLPARAM{"tabselect" default="1"}%"}%
-  %TAB{"%MAKETEXT{"Current Month"}%" id="1"}%
-  %INCLUDE{"WebHome" section="searchICResponses" date="" documenttype="Internal Control Response" tabid="1" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"%MAKETEXT{"Last Month"}%" id="2"}%
-  %INCLUDE{"WebHome" section="searchICResponses" date="" documenttype="Internal Control Response" tabid="2" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"%MAKETEXT{"Older"}%" id="3"}%
-  %INCLUDE{"WebHome" section="searchICResponses" date="" documenttype="Internal Control Response" tabid="3" web="%WEB%"}%
-  %ENDTAB%
-%ENDTABPANE%
-%ENDTAB%
-%TAB{"Internal Control Requests" aspectid="2"}%
-%TABPANE{class="simple"}%
-  %TAB{"Sales"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="Sales" documenttype="Internal Control Request" tabid="1" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"Procurement"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="Procurement" documenttype="Internal Control Request" tabid="2" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"Payroll"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="HR-Payroll" documenttype="Internal Control Request" tabid="3" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"Finance-Closing"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="Finance-Closing" documenttype="Internal Control Request" tabid="4" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"Finance-Investment"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="Finance-Investment" documenttype="Internal Control Request" tabid="5" web="%WEB%"}%
-  %ENDTAB%
-  %TAB{"Finance-Tax"}%
-  %INCLUDE{"WebHome" section="searchICRequests" process="Finance-Tax" documenttype="Internal Control Request" tabid="6" web="%WEB%"}%
-  %ENDTAB%
-%ENDTABPANE%
-%ENDTAB%
-%ENDTABPANE%
-</div>
+<div class="widgetBlockTitle">%MAKETEXT{"Internal Control Topics"}%</div> <div class="widgetBlockContent">%TABPANE{class="simple" select="%URLPARAM{table}%" select="%URLPARAM{"tabselect" default="1"}%"}%%TAB{"Internal Control Responses" aspectid="1"}%%TABPANE{class="simple" select="%URLPARAM{table}%" select="%URLPARAM{"tabselect" default="1"}%"}%%TAB{"%MAKETEXT{"Current Month"}%" id="1"}%%INCLUDE{"WebHome" section="searchICResponses" date="[NOW-1MONTH/MONTH TO NOW]" tabid="1" web="%WEB%"}%%ENDTAB%%TAB{"%MAKETEXT{"Last Month"}%" id="2"}%%INCLUDE{"WebHome" section="searchICResponses" date="[NOW-2MONTH/MONTH TO NOW-1MONTH/MONTH]" tabid="2" web="%WEB%"}%%ENDTAB%%TAB{"%MAKETEXT{"Older"}%" id="3"}%%INCLUDE{"WebHome" section="searchICResponses" date="[* TO NOW-2MONTH/MONTH]" tabid="3" web="%WEB%"}%%ENDTAB%%ENDTABPANE%%ENDTAB%%TAB{"Internal Control Requests" aspectid="2"}%%TABPANE{class="simple"}%%TAB{"Sales"}%%INCLUDE{"WebHome" section="searchICRequests" process="Sales" tabid="1" web="%WEB%"}%%ENDTAB%%TAB{"Procurement"}%%INCLUDE{"WebHome" section="searchICRequests" process="Procurement" tabid="2" web="%WEB%"}%%ENDTAB%%TAB{"Payroll"}%%INCLUDE{"WebHome" section="searchICRequests" process="HR-Payroll" tabid="3" web="%WEB%"}%%ENDTAB%%TAB{"Finance-Closing"}%%INCLUDE{"WebHome" section="searchICRequests" process="Finance-Closing" tabid="4" web="%WEB%"}%%ENDTAB%%TAB{"Finance-Investment"}%%INCLUDE{"WebHome" section="searchICRequests" process="Finance-Investment" tabid="5" web="%WEB%"}%%ENDTAB%%TAB{"Finance-Tax"}%%INCLUDE{"WebHome" section="searchICRequests" process="Finance-Tax" tabid="6" web="%WEB%"}%%ENDTAB%%ENDTABPANE%%ENDTAB%%ENDTABPANE%</div>
 
-<div style="display:none;">
-%STARTSECTION{"searchICResponses"}%
-<form class="searchFilter" action="%SCRIPTURLPATH{view}%/%BASEWEB%/%BASETOPIC%">
-  <div class="searchFilterSingle">%MAKETEXT{"Legal Entity"}%: <label><input type="checkbox" name="filter_entity" value="*" %IF{"'%URLPARAM{"filter_entity" default="*"}%'=~'\*'" then=" checked=\"checked\""}% /> %MAKETEXT{"All Entities"}%</label> %SOLRSEARCH{"(form:ICTaskResponseForm) type:topic -topic:*Template -topic:*Form" facets="LegalEntity=field_LegalEntity_s" format_field_LegalEntity_s="<label><input type=\"checkbox\" name=\"filter_entity\" value=\"$key\" $percntIF{\"'%URLPARAM{"filter_entity" multiple="on" separator=","}%'=~'\b$key\b'\" then=\"checked=\\"checked\\" \"}$percnt/> $key ($count)</label>"}%</div>
-  <input type="hidden" name="tabselect" value="%tabid%" />
-  %BUTTON{type="submit" "%MAKETEXT{"Update"}%"}%
-</form>
+<div style="display: none;">%STARTSECTION{"searchICResponses"}%<form class="searchFilter" action="%SCRIPTURLPATH{view}%/%BASEWEB%/%BASETOPIC%"> <div class="searchFilterSingle">%MAKETEXT{"Legal Entity"}%: <label><input type="checkbox" name="filter_entity" value="*" %IF{"'%URLPARAM{"filter_entity" default="*"}%'=~'\*'" then=" checked=\"checked\""}% /> %MAKETEXT{"All Entities"}%</label> %SOLRSEARCH{"(form:ResponseForm OR %WEB%.ResponseForm) type:topic -topic:*Template -topic:*Form createdate:%date%" facets="LegalEntity=field_LegalEntity_s" format_field_LegalEntity_s="<label><input type=\"checkbox\" name=\"filter_entity\" value=\"$key\" $percntIF{\"'%URLPARAM{"filter_entity" multiple="on" separator=","}%'=~'\b$key\b'\" then=\"checked=\\"checked\\" \"}$percnt/> $key ($count)</label>"}%</div> <input type="hidden" name="tabselect" value="%tabid%" />%BUTTON{type="submit" "%MAKETEXT{"Update"}%"}%</form>
+
 %TABLE{%TABLETHEMEPARAM%}%
 | *%MAKETEXT{"Task Response No."}%* | *%MAKETEXT{"Assessment Date"}%* | *%MAKETEXT{"Process"}%* | *%MAKETEXT{"ICS Control No."}%* | *%MAKETEXT{"Legal Entity"}%* | *%MAKETEXT{"Evaluation"}%* | *%MAKETEXT{"Responder"}%*  | *%MAKETEXT{"Comment"}%* | *%MAKETEXT{"Proposed Measure"}%* |
-%SOLRSEARCH{
-"field_DocumentType_s:\"%documenttype%\" form:ResponseForm -topic:*Template -topic:*Form"
-web="%WEB%"
-fields="web,topic, field_Date_dt, field_Process_s, field_ICSControlNo_s, field_LegalEntity_s, field_ControlRating_s, author, field_AssessmentComment_s, field_MeasureAssessment_s,"
-format="| [[$web.$topic]] | $field_Date_dt | $field_Process_s | $field_ICSControlNo_s | $field_LegalEntity_s | $field_ControlRating_s | $author | $field_AssessmentComment_s | $field_MeasureAssessment_s |$n" 
-rows="30" 
-sort="date desc" 
-}%
-%ENDSECTION{"searchICResponses"}%
+%SOLRSEARCH{   "form:(ResponseForm OR %WEB%.ResponseForm) -topic:*Template -topic:*Form createdate:%date%"   web="%WEB%"   fields="web,topic, field_Date_dt, field_Process_s, field_ICSControlNo_s, field_LegalEntity_s, field_ControlRating_s, author, field_AssessmentComment_s, field_MeasureAssessment_s,"   format="| <a href=\"$topic\">$percntSUBST{text=\"$topic\" pattern=\"Response\" format=\"\"}$percnt | $field_Date_dt | $field_Process_s | $field_ICSControlNo_s | $field_LegalEntity_s | $field_ControlRating_s | $author | $field_AssessmentComment_s | $field_MeasureAssessment_s |$n"   rows="30"   sort="date desc"   }% %ENDSECTION{"searchICResponses"}%
 </div>
-<script type="text/javascript">
-  $('.searchFilterSingle').each(function() {
-    var $f = $(this).find('input[type="checkbox"]');
-    $f.first().change(function() { if ($(this).is(':checked')) { $f.slice(1).attr('checked', false); } }).end().
-    slice(1).change(function() { if ($(this).is(':checked')) { $f.first().attr('checked', false); } });
-  });
-</script>
 
-<div style="display:none;">
-%STARTSECTION{"searchICRequests"}%
-%TABLE{%TABLETHEMEPARAM%}%
+<script type="text/javascript">   $('.searchFilterSingle').each(function() {     var $f = $(this).find('input[type="checkbox"]');     $f.first().change(function() { if ($(this).is(':checked')) { $f.slice(1).attr('checked', false); } }).end().     slice(1).change(function() { if ($(this).is(':checked')) { $f.first().attr('checked', false); } });   }); </script>
+
+<div style="display: none;">
+
+%STARTSECTION{"searchICRequests"}% %TABLE{%TABLETHEMEPARAM%}%
 | *%MAKETEXT{"Task Request No."}%* | *%MAKETEXT{"Internal Control No."}%* | *%MAKETEXT{"Control Type"}%* | *%MAKETEXT{"Control Indicator"}%*  | *%MAKETEXT{"Control Frequency"}%* |
-%SOLRSEARCH{ 
-"form:ResponseForm field_DocumentType_s:\"%documenttype%\" field_Process_s:%process% -topic:*Template -topic:*Form" 
-web="%WEB%" 
-fields="web,topic,field_ICSControlNo_s,field_ControlType_s,field_ControlIndicator_s,field_ControlFrequency_s" 
-format="| [[$web.$topic]] | $field_ICSControlNo_s | $field_ControlType_s | $field_ControlIndicator_s| $field_ControlFrequency_s |$n" 
-rows="30"
-sort="title"
-}%
-%ENDSECTION{"searchICRequests"}%
+%SOLRSEARCH{   "form:(RequestForm  OR %WEB%.RequestForm) field_Process_s:%process% -topic:*Template -topic:*Form"   web="%WEB%"   fields="web,topic,field_ICSControlNo_s,field_ControlType_s,field_ControlIndicator_s,field_ControlFrequency_s"   format="| <a href=\"$topic\">$percntSUBST{text=\"$topic\" pattern=\"Request\" format=\"\"}$percnt | $field_ICSControlNo_s | $field_ControlType_s | $field_ControlIndicator_s| $field_ControlFrequency_s |$n"   rows="30"   sort="title"   }% %ENDSECTION{"searchICRequests"}%
 </div>
 
-<div class="widgetBlockTitle">%MAKETEXT{"Entities"}%</div> 
-<div class="widgetBlockContent">
+<div class="widgetBlockTitle">%MAKETEXT{"Entities"}%</div> <div class="widgetBlockContent">
+
 %TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Entity"}%* | *%MAKETEXT{"Entity Name"}%* | *%MAKETEXT{"Local Internal Control Manager"}%* | *%MAKETEXT{"Local Internal Control Manager Dep"}%*  | *%MAKETEXT{"Sites"}%* | *%MAKETEXT{"Site Manager"}%* | *%MAKETEXT{"Site Manager Deputy"}%* |
-%SOLRSEARCH{ 
-"form:EntityForm -topic:*Form" 
-web="%WEB%" 
-fields="web,topic,field_Entity_s,field_EntityName_s,field_LocalInternalControlManager_s,field_ControlFrequency_s" 
-format="| [[$web.$topic]] | $field_Entity_s | $field_EntityName_s | | |$n" 
-rows="30"
-sort="title"
-}%
+| *%MAKETEXT{"Entity No."}%* | *%MAKETEXT{"Entity"}%* | *%MAKETEXT{"Entity Name"}%* | *%MAKETEXT{"Local Internal Control Manager"}%* | *%MAKETEXT{"Local Internal Control Manager Dep"}%*  | *%MAKETEXT{"Sites"}%* | *%MAKETEXT{"Site Manager"}%* | *%MAKETEXT{"Site Manager Deputy"}%* |
+%SOLRSEARCH{  "form:(EntityForm OR %WEB%.EntityForm) -topic:*Form"   web="%WEB%"   fields="web,topic,field_Entity_s,field_EntityName_s,field_LocalInternalControlManager_s,field_LocalInternalControlManagerDeputy_s,field_Sites_s,field_SiteManager_s,field_SiteManagerDeputy_s"
+  format="| [[$web.$topic]] | $field_Entity_s | $field_EntityName_s | $field_LocalInternalControlManager_s | $field_LocalInternalControlManagerDeputy_s | $field_Sites_s | $field_SiteManager_s | $field_SiteManagerDeputy_s |$n"   rows="30"   sort="title"   }%
 </div>
 
+%META:FILEATTACHMENT{name="IC_Cockpit.png" attachment="IC_Cockpit.png" attr="" comment="" date="1442307967" path="G:\Global_Quality_EHS\Project_Wiki\Graphics\IC_Cockpit.png" size="1481" user="schertlk" version="1"}%
+%META:FILEATTACHMENT{name="IC_Analysis.png" attachment="IC_Analysis.png" attr="" comment="" date="1442307943" path="G:\Global_Quality_EHS\Project_Wiki\Graphics\IC_Analysis.png" size="9819" user="schertlk" version="1"}%
+%META:FILEATTACHMENT{name="IC_Archiv.png" attachment="IC_Archiv.png" attr="" comment="" date="1442307955" path="G:\Global_Quality_EHS\Project_Wiki\Graphics\IC_Archiv.png" size="1361" user="schertlk" version="1"}%
 %META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="SystemView"}%
-%META:FILEATTACHMENT{name="IC_Cockpit.png" attachment="IC_Cockpit.png" attr="" comment="" date="1436449014" path="IC_Cockpit.png" size="1481" user="meckelc" version="2"}%
-%META:FILEATTACHMENT{name="IC_Analysis.png" attachment="IC_Analysis.png" attr="" comment="" date="1436448944" path="IC_Analysis.png" size="9819" user="meckelc" version="1"}%
-%META:FILEATTACHMENT{name="IC_Archiv.png" attachment="IC_Archiv.png" attr="" comment="" date="1436448986" path="IC_Archiv.png" size="1361" user="meckelc" version="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
 %META:PREFERENCE{name="ALLOWTOPICRENAME" title="ALLOWTOPICRENAME" type="Set" value="AdminGroup"}%
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value=""}%
 %META:PREFERENCE{name="WORKFLOW" title="WORKFLOW" type="Set" value=""}%
 %META:PREFERENCE{name="TOPICTITLE" title="TOPICTITLE" type="Set" value="Internal Control System Web"}%
-%META:PREFERENCE{name="VIEW_TEMPLATE" title="VIEW_TEMPLATE" type="Set" value="SystemView"}%

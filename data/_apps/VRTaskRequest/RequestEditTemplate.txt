@@ -8,14 +8,14 @@
 
 <div style="display:none;">
 %RENDERFOREDIT{field="Date" format="$edit"}%
-%RENDERFOREDIT{field="DocumentType" type="Set" value="Internal Control Request"}%
+%RENDERFOREDIT{field="TaskRequestNo" type="Set" value="%TOPIC%"}%
 </div>
 
 <table class="metaDataHead" table-layout:fixed>
 <tr> <td colspan="4">
 ---+ Process Relevance
 </td> </tr>
-<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFOREDIT{field="Process" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFOREDIT{field="ICSControlNo" format="$edit"}%</td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFOREDIT{field="Process" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFOREDIT{field="ICSControlNo" format="$edit"}% %RENDERFOREDIT{field="SubProcess" format="$edit"}%</td></tr>
 <tr> <td colspan="4">
 ---+ Control Objective
 </td> </tr>

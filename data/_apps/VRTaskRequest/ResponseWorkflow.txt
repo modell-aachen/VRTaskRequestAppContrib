@@ -7,14 +7,14 @@
 ---++ States
 %EDITTABLE{}%
 | *State* | *Allow Edit* | *Allow Move* | *Allow Comment* | *Message* | *State Type* |
-| APPROVALBYMANAGER | MeckelC,KeyUserGroup | | | This Request is waiting for approval by the Global Internal Control manager. | draft |
-| RESPONSE | KeyUserGroup | | | Response. | approved |
+| WAITING_FOR_ANSWER | KeyUserGroup | | | Waiting for answer | draft |
+| ANSWERED | KeyUserGroup | | | Answered | approved |
 
  
 ---++ Transitions
 %EDITTABLE{}%
 | *State* | *Action* | *Next State* | *Allowed* | *Notify* | *Condition* | *Warning* | *Attribute* |
-| RESPONSE | Request for approval | APPROVALBYMANAGER | LOGGEDIN | MeckelC | on | | REMARK |
+| WAITING_FOR_ANSWER | Mark as answered | ANSWERED | LOGGEDIN | | | | REMARK |
 
    * Set NOWYSIWYG = 1
    * Set VIEW_TEMPLATE = WorkflowView

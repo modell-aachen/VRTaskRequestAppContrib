@@ -2,8 +2,8 @@
 | *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
 | Entity | text | 50 | | | |
 | EntityName | text | 50 | | | |
-| LocalInternalControlMangager | text | 50 | | | |
-| LocalInternalControlMangagerDeputy | text | 50 | | | |
-| Sites | select | 50 | | | |
-| SiteManager | select | 50 | | | |
-| SiteManagerDeputy | select | 50 | | | |
+| LocalInternalControlManager | select2 | 50 | %S2USERAUTOCOMPLETE% | %MAKETEXT{"Role owner"}% | initUrl="%SCRIPTURL{view}%/Custom/LdapAjaxInterface?section=user_select2_init;skin=text" displayTopic="Custom.LdapAjaxInterface" displaySection="user_select2_display" allowClear="1" |
+| LocalInternalControlManagerDeputy | select2 | 50 | %S2USERAUTOCOMPLETE% | %MAKETEXT{"Deputy"}% | initUrl="%SCRIPTURL{view}%/Custom/LdapAjaxInterface?section=user_select2_init;skin=text" displayTopic="Custom.LdapAjaxInterface" displaySection="user_select2_display" allowClear="1" |
+| Sites | text | 50 | | | |
+| SiteManager | select2 | 50 | %S2USERAUTOCOMPLETE% | %MAKETEXT{"Role owner"}% | initUrl="%SCRIPTURL{view}%/Custom/LdapAjaxInterface?section=user_select2_init;skin=text" displayTopic="Custom.LdapAjaxInterface" displaySection="user_select2_display" allowClear="1" |
+| SiteManagerDeputy | select2 | 50 | %S2USERAUTOCOMPLETE% | %MAKETEXT{"Deputy"}% | initUrl="%SCRIPTURL{view}%/Custom/LdapAjaxInterface?section=user_select2_init;skin=text" displayTopic="Custom.LdapAjaxInterface" displaySection="user_select2_display" allowClear="1" |

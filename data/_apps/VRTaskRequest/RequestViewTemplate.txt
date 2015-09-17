@@ -8,7 +8,7 @@
 
 <div style="display:none;">
 %RENDERFORDISPLAY{field="Date" format="$value"}%
-%RENDERFORDISPLAY{field="DocumentType" type="Set" value="Internal Control Request"}%
+%RENDERFORDISPLAY{field="TaskRequestNo" type="Set" value="%TOPIC%"}%
 </div>
 
 
@@ -16,7 +16,7 @@
 <tr> <td colspan="4">
 ---+ Process Relevance
 </td> </tr>
-<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="Process" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ICSControlNo" format="$value"}%</td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="Process" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ICSControlNo" format="$value"}% %RENDERFORDISPLAY{field="SubProcess" format="$value"}%</td></tr>
 <tr> <td colspan="4">
 ---+ Control Objective
 </td> </tr>
@@ -36,7 +36,7 @@
 <div class="widgetBlockContent">
 
 <table class="metaDataHead" table-layout:fixed>
-<tr><td width="150px"><b>%MAKETEXT{"Control Type"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ControlType" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Control Indicator"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="Control Indicator" format="$value"}%</td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Control Type"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ControlType" format="$value"}%</td><td width="150px"><b>%MAKETEXT{"Control Indicator"}%:</b></td><td width="300px">%RENDERFORDISPLAY{field="ControlIndicator" format="$value"}%</td></tr>
 <tr><td><b>%MAKETEXT{"Control Frequency"}%:</b></td><td>%RENDERFORDISPLAY{field="ControlFrequency" format="$value"}%</td><td><b>%MAKETEXT{"Task Issue Date"}%:</b></td><td>%RENDERFORDISPLAY{field="IssueDate" format="$value"}%</td></tr>
 <tr><td><b>Transaction SAP:</b></td><td>%RENDERFORDISPLAY{field="TransactionSAP" format="$value"}%</td><td> </td><td> </td></tr>
 <tr><td colspan="4">

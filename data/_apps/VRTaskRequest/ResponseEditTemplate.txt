@@ -3,20 +3,18 @@
 %TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
 %TMPL:P{"formstart"}%%TMPL:P{"formtop"}%
 
-<div class="widgetBlockTitle">Internal Control Response</div>
+<div class="widgetBlockTitle disabledEditFields">Internal Control Response</div>
 <div class="widgetBlockContent">
 
 <div style="display:none;">
 %RENDERFOREDIT{field="Date" format="$edit"}%
-%RENDERFOREDIT{field="Author" type="Set" value="%WIKINAME%"}%
-%RENDERFOREDIT{field="DocumentType" type="Set" value="Internal Control Response"}%
 </div>
 
-<table class="metaDataHead" table-layout:fixed>
+<table class="metaDataHead" style="table-layout:fixed">
 <tr> <td colspan="4">
 ---+ Process Relevance
 </td> </tr>
-<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFOREDIT{field="Process" format="$edit"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFOREDIT{field="ICSControlNo" format="$edit"}%</td></tr>
+<tr><td width="150px"><b>%MAKETEXT{"Process"}%:</b></td><td width="300px">%RENDERFOREDIT{field="Process" format="$value"}%%RENDERFOREDIT{field="Process" format="$edit" hidden="Process"}%</td><td width="150px"><b>%MAKETEXT{"Internal Control No."}%:</b></td><td width="300px">%RENDERFOREDIT{field="ICSControlNo" format="$edit"}% %RENDERFOREDIT{field="SubProcess" format="$edit"}%</td></tr>
 <tr> <td colspan="4">
 ---+ Control Objective
 </td> </tr>
@@ -31,6 +29,12 @@
 <tr><td colspan="4">%RENDERFOREDIT{field="ControlEvidence" format="$edit"}%</td></tr>
 </table>
 </div>
+<literal><script>
+	$('input,select,textarea').each(function() {
+      $(this).attr('readonly','readonly');
+      $(this).css('background-color', '#eee');
+    })
+</script></literal>
 
 <div class="widgetBlockTitle">Assessment <font size="1">by Local Internal Control Responsible</font></div>
 <div class="widgetBlockContent">
@@ -63,8 +67,8 @@
 <div class="widgetBlockContent">
   
 <table class="metaDataHead" table-layout:fixed>
-<tr><td width="300px"><b>%MAKETEXT{"Relevance"}%</b></td><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
-<tr><td>%RENDERFOREDIT{field="Relevance" format="$edit"}%</td><td>%RENDERFOREDIT{field="RiskLevel" format="$edit"}%</td><td>%RENDERFOREDIT{field="LegalEntity" format="$edit"}%</td></tr>
+<tr><td width="300px"><b>%MAKETEXT{"Risk Level"}%</b></td><td width="300px"><b>%MAKETEXT{"Legal Entity"}%</b></td></tr>
+<tr><td>%RENDERFOREDIT{field="RiskLevel" format="$edit"}%</td><td>%RENDERFOREDIT{field="LegalEntity" format="$edit"}%</td></tr>
 </table>
 </div>
 
